@@ -18,7 +18,7 @@
     alt="header"
     class="absolute object-cover w-full h-full z-[-99]"
   />
-  <div class="h-full px-8">
+  <div class="h-full px-8 md:px-32 4xl:px-0">
     <!--Nav-->
     <div class="w-full container mx-auto">
       <div class="w-full flex items-center justify-between">
