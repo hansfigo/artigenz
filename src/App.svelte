@@ -10,7 +10,7 @@
 </script>
 
 <div
-  class="leading-normal tracking-normal text-indigo-400 bg-cover bg-fixed relative min-h-screen"
+  class="leading-normal tracking-normal text-indigo-400 bg-cover bg-fixed relative min-h-screen overflow-x-hidden"
   style="background-image: url('/assets/header.png');"
 >
   <img
