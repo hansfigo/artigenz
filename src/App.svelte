@@ -9,11 +9,11 @@
 </script>
 
 <div
-  class="leading-normal tracking-normal text-indigo-400  bg-cover bg-fixed relative"
+  class="leading-normal tracking-normal text-indigo-400  bg-cover bg-fixed relative min-h-screen"
   style="background-image: url('/assets/header.png');"
 >
   <img src={header} alt="header" class="absolute object-cover w-full h-full z-[-99]">
-  <div class="h-full">
+  <div class="h-full px-8">
     <!--Nav-->
     <div class="w-full container mx-auto">
       <div class="w-full flex items-center justify-between">
