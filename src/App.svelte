@@ -120,14 +120,14 @@
         </div>
 
         <!--Right Col-->
-        <div class=" w-full hidden md:block md:flex relative h-[42rem]">
+        <div class=" w-full hidden  md:flex relative h-[42rem]">
           <div class="p-12 overflow-hidden"></div>
           <!-- <img
           class="mx-auto w-full md:w-4/5 transform -rotate-6 transition hover:scale-105 duration-700 ease-in-out hover:rotate-6"
           src={macbook}
           alt="macbook"
         /> -->
-          <div class=" w-full absolute">
+          <div class="bg w-full absolute">
             <Canvas />
           </div>
         </div>

@@ -63,7 +63,7 @@
 </script>
 
 <div
-  class="min-h-[48rem] w-full"
+  class="min-h-[48rem] min-w-full"
   bind:this={container}
   style="width: 100%; height: 100%;"
 ></div>
