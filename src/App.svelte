@@ -2,17 +2,22 @@
   import svelteLogo from "./assets/svelte.svg";
   import viteLogo from "/vite.svg";
   import Counter from "./lib/Counter.svelte";
-  import macbook from "./assets/macbook.svg"
-  import header from "./assets/header.png"
-  import appStore from "./assets/App Store.svg"
-  import playStore from "./assets/Play Store.svg"
+  import macbook from "./assets/macbook.svg";
+  import header from "./assets/header.png";
+  import appStore from "./assets/App Store.svg";
+  import playStore from "./assets/Play Store.svg";
+  import Canvas from "./lib/Canvas.svelte";
 </script>
 
 <div
-  class="leading-normal tracking-normal text-indigo-400  bg-cover bg-fixed relative min-h-screen"
+  class="leading-normal tracking-normal text-indigo-400 bg-cover bg-fixed relative min-h-screen"
   style="background-image: url('/assets/header.png');"
 >
-  <img src={header} alt="header" class="absolute object-cover w-full h-full z-[-99]">
+  <img
+    src={header}
+    alt="header"
+    class="absolute object-cover w-full h-full z-[-99]"
+  />
   <div class="h-full px-8">
     <!--Nav-->
     <div class="w-full container mx-auto">
@@ -62,28 +67,28 @@
 
     <!--Main-->
     <div
-      class="container pt-24 md:pt-36 mx-auto flex flex-wrap flex-col md:flex-row items-center"
+      class="container pt-24 md:pt-36 mx-auto flex flex-wrap flex-col  items-center h-full"
     >
       <!--Left Col-->
+      <div class="flex justify-between w-full">
+
       <div
-        class="flex flex-col w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden"
+        class="flex flex-col w-full  justify-center lg:items-start overflow-y-hidden"
       >
         <h1
           class="my-4 text-3xl md:text-5xl text-white opacity-75 font-bold leading-tight text-center md:text-left"
         >
-         
           <span
             class="bg-clip-text text-transparent bg-gradient-to-r from-green-400 via-pink-500 to-purple-500"
           >
             Next gen
           </span>
-          3D Platform
-          to Brand yourself!
+          3D Platform to Brand yourself!
         </h1>
         <p
           class="leading-normal text-base md:text-2xl mb-8 text-center md:text-left"
         >
-        Brand yourself with our next-gen 3D platform now ! 
+          Brand yourself with our next-gen 3D platform now !
         </p>
 
         <form
@@ -116,13 +121,18 @@
       </div>
 
       <!--Right Col-->
-      <div class="w-full xl:w-3/5 p-12 overflow-hidden">
-        <img
+      <div class=" w-full  relative  flex h-[42rem]">
+        <div class="p-12 overflow-hidden "></div>
+        <!-- <img
           class="mx-auto w-full md:w-4/5 transform -rotate-6 transition hover:scale-105 duration-700 ease-in-out hover:rotate-6"
           src={macbook}
           alt="macbook"
-        />
+        /> -->
+        <div class=" w-full absolute">
+          <Canvas />
+        </div>
       </div>
+    </div>
 
       <div class="mx-auto md:pt-16">
         <p class="text-blue-400 font-bold pb-8 lg:pb-6 text-center">
@@ -158,4 +168,3 @@
     </div>
   </div>
 </div>
-
